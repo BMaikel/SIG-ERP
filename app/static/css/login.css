@@ -1,0 +1,29 @@
+.img-banner {
+    background-image: url("https://www.miraflores.gob.pe/wp-content/uploads/2021/05/0C4110A9-93A3-48A6-A1B0-910D98B74EF8-1024x673.jpeg");
+    background-size: cover;
+}
+
+.btn-success {
+    background-color: darkolivegreen;
+    border-color: darkolivegreen;
+}
+
+.btn-success:hover {
+    background-color: #69bb61;
+    border-color: rgb(112, 177, 103);
+}
+
+.form-control {
+    font-size: 1rem;
+    padding-left: 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+    border-radius: 0;
+}
+.form-control:focus {
+    border-bottom: 1px solid darkolivegreen;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: 0 0 0 0 darkolivegreen;
+}
