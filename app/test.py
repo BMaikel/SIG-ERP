@@ -1,5 +1,6 @@
 from bd_cnn import Database
 
-test = Database()
+db = Database()
 
-print(test.buscar_usuario("perro","perro"))
+a = db.buscar_usuario("admin","admin")
+db.close

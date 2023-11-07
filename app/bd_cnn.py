@@ -13,6 +13,15 @@ class Database:
 
         except Exception as e:
             raise
+    
+    def get_user(self, id):
+        sql = f"""SELECT * FROM empleado WHERE id = "{id}";"""
+        try:
+            self.cursor.execute(sql)
+            return self.cursor.fetchone() #Un registro
+
+        except Exception as e:
+            raise
         
     def close(self):
         self.connection.close() #Es necesario terminar la conección con la base de datos
