@@ -8,9 +8,6 @@
     <!--CSS Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <!--JS Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
     <!--CSS Propio-->
     <link href="{{url_for('static',filename='css/login.css')}}" rel="stylesheet"></link>
 </head>
@@ -29,12 +26,12 @@
                                 <div class="fs-4 pb-1 text-secondary">INICIAR SESIÓN</div>
                                 <p class="text-body-secondary">Ingresa tu nombre de usuario y contraseña para ingresar al sistema</p>
                             </div>
-                            <form action="">
+                            <form action="/login" method="POST">
                                 <div class="form-group pb-3">
-                                    <input type="text" class="form-control" placeholder="Nombre de Usuario">
+                                    <input type="text" class="form-control" placeholder="Nombre de Usuario" name = "username">
                                 </div>
                                 <div class="form-group pb-3">
-                                    <input type="password" class="form-control" placeholder="Contraseña">
+                                    <input type="password" class="form-control" placeholder="Contraseña" name="pass">
                                 </div>
                                 <div class="form-group d-grid gap-2">
                                     <button type="submit" class="btn btn-success">ACCEDER</button>
@@ -48,9 +45,12 @@
                 </div>
             <!--Imagen-->
                 <div class="col-md-9 img-banner">
+                    <p class="bottom-right">© Limpieza Total 2023. Todos los derechos reservados</p>
                 </div>
             </div>
         </div>
     </section>
 </body>
+<!--JS Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>

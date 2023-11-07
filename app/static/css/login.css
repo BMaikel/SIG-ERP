@@ -21,9 +21,17 @@
     border-radius: 0;
 }
 .form-control:focus {
-    border-bottom: 1px solid darkolivegreen;
+    border-bottom: 1px solid #69bb61;
     border-top: none;
     border-left: none;
     border-right: none;
     box-shadow: 0 0 0 0 darkolivegreen;
+}
+
+.bottom-right {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px; /* Espacio entre el texto y los bordes del contenedor */
 }
