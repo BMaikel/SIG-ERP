@@ -6,93 +6,194 @@
     <title>Limpieza Total</title>
 
     <!--CSS Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!--CSS Propio-->
+    <link href="{{url_for('static',filename='css/sass.css')}}" rel="stylesheet"></link>
+    <link href="{{url_for('static',filename='css/layets.css')}}" rel="stylesheet"></link>
     <link href="{{url_for('static',filename='css/styles.css')}}" rel="stylesheet"></link>
+    <link href="{{url_for('static',filename='css/responsive.css')}}" rel="stylesheet"></link>
 
     <!--FontAwesome-->
     <script src="https://kit.fontawesome.com/a741ca24aa.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Sidebar -->
-            <div class="col-3 sidebar">
-                <div>
-                    <a href="" class="d-flex align-items-center text-decoration-none ps-3 pt-4">
-                        <img src="{{url_for('static',filename='img/logo_simp.PNG')}}" alt="" width="40">
-                        <span class="fs-5 fw-semibold text-logo">Limpieza Total</span>
+    <div class="main-wraper">
+        <!--- NAVBAR --->
+        <div class="header-container fixed-top">
+            <header class="header navbar navbar-expand-sm expand-header">
+                <div class="header-left d-flex">
+
+                    <div class="logo">
+                        Limpieza Total
+                    </div>
+
+                    <a href="#" class="sidebarCollapse" data-placement="bottom">
+                        <span class="fas fa-bars"></span>
                     </a>
-                    <hr>
-                    <ul class="nav nav-pills flex-column mb-auto" id="menu">
 
-                        <li class="nav-item">
-                            <a href="" class="nav-link text-white" aria-current="page">
-                                <i class="fa fa-house"></i>
-                                <span class="ms-2">Inicio</span>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="" class="nav-link text-white" aria-current="page">
-                                <i class="fa fa-gauge"></i>
-                                <span class="ms-2">Dashboard</span>
-                            </a>
-                        </li>
-
-                        <hr>
-
-                        <li class="nav-item">
-                            <a href="" class="nav-link text-white" aria-current="page">
-                                <i class="fa fa-box"></i>
-                                <span class="ms-2">Productos</span>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="" class="nav-link text-white" aria-current="page">
-                                <i class="fa fa-boxes-stacked"></i>
-                                <span class="ms-2">Inventario</span>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="" class="nav-link text-white" aria-current="page">
-                                <i class="fa fa-parachute-box"></i>
-                                <span class="ms-2">Proveedores</span>
-                            </a>
-                        </li>
-
-                        <hr>
-
-                        <li class="nav-item">
-                            <a href="" class="nav-link text-white" aria-current="page">
-                                <i class="fa fa-shop"></i>
-                                <span class="ms-2">Ventas</span>
-                            </a>
-                        </li>
-
-    
-                        <li class="nav-item">
-                            <a href="" class="nav-link text-white" aria-current="page">
-                                <i class="fa fa-users"></i>
-                                <span class="ms-2">Empleados</span>
-                            </a>
-                        </li>
-                    </ul>
                 </div>
-            </div>
-            <!-- Contenido principal del dashboard -->
-            <div class="col-9">
-                <div class="d-flex">
-                    Hola
-                    <hr>
-                </div>
-            </div>
+
+                <ul class="navbar-item flex-row ml-auto">
+
+                    <li class="nav-item dropdown user-profile-dropdown">
+                        <a href="#" class="nav-link user" id="Notify" data-bs-toggle="dropdown">
+                            <img src="{{url_for('static',filename='img/anillo-de-campana.png')}}" alt="" class="icon">
+                            <p class="count bg-clc">4</p>
+                        </a>
+
+                        <div class="dropdown-menu">
+                            <div class="dp-main-menu">
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="{{url_for('static',filename='img/servidor.png')}}" alt="" class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">Servidor iniciado &#128513</p>
+                                            <p class="note-item">2 min ago</p>
+                                        </div>
+                                        <p href="#" class="status-link bg-clc3"><span class="fa fa-times"></span></p>
+                                    </div>
+                                </a>
+
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="{{url_for('static',filename='img/cupido.png')}}" alt="" class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">Ten buena jornada</p>
+                                            <p class="note-item">22 min ago</p>
+                                        </div>
+                                        <p href="#" class="status-link bg-clc3"><span class="fa fa-times"></span></p>
+                                    </div>
+                                </a>
+
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="{{url_for('static',filename='img/nota.png')}}" alt="" class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">Mensajes disponibles</p>
+                                            <p class="note-item">34 min ago</p>
+                                        </div>
+                                        <p href="#" class="status-link bg-clc3"><span class="fa fa-times"></span></p>
+                                    </div>
+                                </a>
+
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="{{url_for('static',filename='img/cruzar.png')}}" alt="" class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">Revisar almacén</p>
+                                            <p class="note-item">35 min ago</p>
+                                        </div>
+                                        <p href="#" class="status-link bg-clc3"><span class="fa fa-times"></span></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown user-profile-dropdown">
+                        <a href="#" class="nav-link user" id="Notify" data-bs-toggle="dropdown">
+                            <img src="{{url_for('static',filename='img/chat-de-burbujas.png')}}" alt="" class="icon">
+                            <p class="count bg-clc2">4</p>
+                        </a>
+
+                        <div class="dropdown-menu">
+                            <div class="dp-main-menu">
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="https://i.pinimg.com/474x/22/35/00/2235009be651daf00a22ed072cc4ad6f.jpg" alt="" class="sms-user">
+                                    <div class="note-message-desmis">
+                                        <div class="user-message-info">
+                                            <p class="note-name">Michael Bañares</p>
+                                            <p class="note-role">Admin</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="https://i.pinimg.com/736x/a8/69/59/a8695953fc08718746c2805c0e6fcf97.jpg" alt="" class="sms-user">
+                                    <div class="note-message-desmis">
+                                        <div class="user-message-info">
+                                            <p class="note-name">Elvis Herrera</p>
+                                            <p class="note-role">Conserje</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="https://i.pinimg.com/1200x/f1/a9/31/f1a931bbf69ec09338cdfee2648ba3c9.jpg" alt="" class="sms-user">
+                                    <div class="note-message-desmis">
+                                        <div class="user-message-info">
+                                            <p class="note-name">Jhordy Castro</p>
+                                            <p class="note-role">Usuario</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="https://i.pinimg.com/474x/19/a1/03/19a1031a84ed81842bfa4c81da522d60.jpg" alt="" class="sms-user">
+                                    <div class="note-message-desmis">
+                                        <div class="user-message-info">
+                                            <p class="note-name">Betsabé Rojas</p>
+                                            <p class="note-role">Usuario</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li class="nav-item dropdown user-profile-dropdown">
+                        <a href="#" class="nav-link user" id="Notify" data-bs-toggle="dropdown">
+                            <img src="https://i.pinimg.com/474x/22/35/00/2235009be651daf00a22ed072cc4ad6f.jpg" alt="" class="icon rounded-circle">
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="user-profile-section">
+                                <div class="media mx-auto">
+                                    <img src="https://i.pinimg.com/474x/22/35/00/2235009be651daf00a22ed072cc4ad6f.jpg" alt="" class="img-fluid mr-2">
+                                    <div class="media-body">
+                                        <h5>Michael Bañares</h5>
+                                        <p>Admin</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dp-main-menu">
+                                <a href="" class="dropdown-item"><span class="fa fa-user"></span>Perfil</a>
+                                <a href="" class="dropdown-item"><span class="fa-regular fa-message"></span>Mensajes</a>
+                                <a href="" class="dropdown-item"><span class="fa-solid fa-gear"></span>Opciones</a>
+                                <a href="./logout" class="dropdown-item"><span class="fa-solid fa-right-from-bracket"></span>Cerrar Sesión</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown user-profile-dropdown">
+                        <a href="#" class="nav-link user" id="Notify" data-bs-toggle="dropdown">
+                            <img src="{{url_for('static',filename='img/configuraciones.png')}}" alt="" class="icon">
+                        </a>
+
+                        <div class="dropdown-menu">
+                            <div class="dp-main-menu">
+                                <a href="" class="dropdown-item"><span class="fa fa-plug"></span>Permisos</a>
+                                <a href="" class="dropdown-item"><span class="fa fa-object-ungroup"></span>Tipo de diseño</a>
+                                <a href="" class="dropdown-item"><span class="fa-solid fa-lock"></span>Privacidad</a>
+                                <a href="./logout" class="dropdown-item"><span class="fa-solid fa-user"></span>Admin</a>
+                            </div>
+                        </div>
+
+
+                    </li>
+                </ul>
+
+            </header>
         </div>
+        <!--- NAVBAR END --->
     </div>
+
 </body>
 <!--JS Bootstrap-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="{{url_for('static',filename='js/bootstrap.bundle.min.js')}}"></script>
+<!--JS Query-->
+<script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+<!--JS Mio uwu-->
+<script src="{{url_for('static',filename='js/main.js')}}"></script>
 </html>

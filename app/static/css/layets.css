@@ -1,0 +1,218 @@
+.header-container {
+    box-shadow: -1px 4px 20px 1px #f1f1f185;
+    background: #fff;
+}
+
+header.header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+img.icon {
+    width: 24px;
+}
+
+.header-left {
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.navbar-item {
+    display: flex;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.user-profile-dropdown {
+    margin-left: 20px;
+    display: flex;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link.user {
+    padding: 6px 0px;
+    font-size: 25px;
+    color: #9999;
+    position: relative;
+}
+
+p.count {
+    position: absolute;
+    font-size: 10px;
+    top: 0;
+    color: var(--white-color);
+    height: 13px;
+    width: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    right: -3px;
+}
+
+.logo {
+    width: 240px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 0px;
+    /*background: var(--main-gradient);*/
+    background: var(--main-color);
+    color: var(--white-color);
+}
+
+a.sidebarCollapse {
+    padding-left: 20px;
+    color: #9999;
+    font-size: 20px;
+}
+
+/*--- DROPDOWN MENU---*/
+
+.dropdown-menu {
+    z-index: var(--z-fixed);
+    max-width: 15rem;
+    right: 0px !important;
+    min-width: 16rem;
+    left: auto !important;
+    padding: 0;
+    border-radius: 5px;
+}
+
+img.user-note {
+    width: 35px;
+    margin-right: 8px;
+}
+
+.dp-main-menu {
+    display: inline-grid;
+    width: 100%;
+    box-shadow: 0px 4px 20px 0px #ddd;
+    border-radius: 5px;
+    padding: 10px 0px;
+}
+
+.dp-main-menu a {
+    width: 100%;
+    font-size: 13px;
+    color: var(--second-color);
+    white-space: initial;
+    line-height: 13px;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+    padding: 10px;
+}
+
+.message-item {
+    display: flex;
+}
+
+.note-info-desmis {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.user-notify-info {
+    line-height: 18px;
+}
+
+.status-link {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--white-color);
+}
+
+p.status-link.bg-clc3 span {
+    color: white;
+    padding: 0;
+}
+
+p.note-name {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+p.note-item {
+    font-size: 10px;
+    color: #ddd;
+}
+
+.dp-main-menu a:last-child {
+    border-bottom: 0;
+}
+
+/*--- DROPDOWN MESSAGES---*/
+
+img.sms-user {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+p.note-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--second-color);
+}
+
+p.note-role {
+    font-size: 10px;
+    color: var(--main-color);
+}
+
+
+/*--- DROPDOWN PERFIL---*/
+
+
+.media {
+    background: var(--main-color);
+    text-align: center;
+    padding-top: 10px;
+}
+
+img.img-fluid.mr-2 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.media-body {
+    line-height: 20px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.media-body h5 {
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.media-body p {
+    color: var(--white-color);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+a.dropdown-item a span{
+    color: var(--main-color);
+}
+
+.dp-main-menu a span {
+    color: var(--main-color);
+    padding-right: 8px;
+}
+
+
+

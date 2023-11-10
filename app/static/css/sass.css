@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+/*---- Variables CSS ---*/
+
+:root {
+    --header-height: 3rem;
+
+    /*--- Colors ---*/
+
+    --main-color: #264f12;
+    --second-color: rgb(7,3,45);
+    --main-gradient: linear-gradient(121deg, rgba(38,79,18,255) 25%, rgba(134,185,112,255) 100%);
+    --dark-bg: #333;
+    --main-color-alt: #86b970;
+    --text-color: #707070;
+    --white-color: #fff;
+    --white-alt: #e6e6e6;
+
+    /*---- Fonts and typography ---*/
+
+    --body-font: "Popins", sans-serif;
+    --biggest-font-size: 2.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --nommel-font-size: .938rem;
+    --small-font-size: .813rem; 
+    --smaller-font-size: .75rem;
+
+    /*---- Font width ---*/
+
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*---- Margin y Padding ---*/
+    --md-1: 5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+
+    /*---- Z-Index ---*/
+
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/*---- BASE CSS ---*/
+*,
+::before, ::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--second-color);
+    font-size: 13px;
+    font-weight: 400;
+    font-family: var(--body-font);
+    line-height: 28px;
+    overflow-x: hidden;
+    background: hsl(200deg, 27% 98%);
+}
+
+img {
+    vertical-align: middle;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--white-color);
+
+}
+
+ul,ol {
+    list-style: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+/*---GENERAL STYLE END---*/
+
+h1,h2,h3,h4,h5,h6,p,ul,li,span,label {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+ovh {
+    overflow: hidden;
+}
+
+table.table {
+    white-space: nowrap;
+}
+
+.di-btn {
+    color: rgb(240, 255, 240);
+    padding: 0.7rem var(--mb-2);
+    font-weight: 500;
+    border-radius: 3px;
+    box-shadow: 0px 6px 19px 1px #06041d4a;
+}
+
+.green-gradient {
+    background: var(--main-gradient);
+}
+
+.bg-cla {
+    background: var(--main-color);
+}
+
+.bg-clc {
+    /*background: linear-gradient(121deg, rgb(58 77 57) 25%, rgb(236 227 206 / 95%) 100%);*/
+    background: #69bb61;
+}
+
+.bg-clc2 {
+    /*background: linear-gradient(121deg, rgb(58 77 57) 25%, rgb(236 227 206 / 95%) 100%);*/
+    background: #e4ae5d;
+}
+
+.bg-clc3 {
+    /*background: linear-gradient(121deg, rgb(58 77 57) 25%, rgb(236 227 206 / 95%) 100%);*/
+    background: #86b970
+    ;
+}

@@ -45,7 +45,7 @@ def logout():
 @app.route('/')
 def index():
     if 'usuario' in session:
-        return render_template("home_c.html")
+        return render_template("home.html")
     
     return redirect(url_for('login'))
 
