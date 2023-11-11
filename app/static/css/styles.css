@@ -39,3 +39,26 @@
     font-size: 26px;
     font-weight: 600;
 }
+
+.chart-nav.active {
+    background: #fff !important;
+    color: var(--main-color) !important;
+    border-bottom: 2px solid var(--main-color);
+    border-radius: 0px;
+}
+
+.chart-nav:hover {
+    color: var(--main-color);
+}
+
+.chart-nav {
+    color: var(--second-color);
+    padding: 0px 15px;
+    transition: .3s;
+}
+
+.chart-header-tab {
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}

@@ -194,11 +194,11 @@
             <div class="menubar-content">
                 <nav class="animated bounceInDown">
                     <ul class="sidebar">
-                        <li class="active">
-                            <a href="#"><i class="fa fa-home"></i>Inicio</a>
-                        </li>
                         <li>
-                            <a href="#"><i class="fa-solid fa-gauge"></i>Dashboard</a>
+                            <a href="./"><i class="fa fa-home"></i>Inicio</a>
+                        </li>
+                        <li class="active">
+                            <a href="./dashboard"><i class="fa-solid fa-gauge"></i>Dashboard</a>
                         </li>         
                         <li>
                             <a href="#"><i class="fa fa-box-open"></i>Productos</a>
@@ -240,7 +240,7 @@
                             <a href="#"><i class="fa-regular fa-rectangle-list"></i>Asistencia</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa-solid fa-toolbox"></i>Herramientas</a>
+                            <a href="./herramientas"><i class="fa-solid fa-toolbox"></i>Herramientas</a>
                         </li>
                     </ul>
                 </nav>
@@ -274,15 +274,17 @@
                                         <div class="classic-tabs">
                                             <!--NAV TABS-->
                                             <div class="tabs-wraper">
-                                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                                    <li class="nav-item" role="presentation">
-                                                      <button class="nav-link active" id="pills-week-tab" data-bs-toggle="pill" data-bs-target="#pills-week" type="button" role="tab" aria-controls="pills-week" aria-selected="true">Week</button>
+                                                <ul class="nav nav-pills mb-3 chart-header-tab" id="pills-tab" role="tablist">
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link chart-nav active" id="pills-week-tab" data-bs-toggle="pill" data-bs-target="#pills-week" type="button" role="tab" aria-controls="pills-week" aria-selected="true">
+                                                            Semana
+                                                        </a>
                                                     </li>
-                                                    <li class="nav-item" role="presentation">
-                                                      <button class="nav-link" id="pills-month-tab" data-bs-toggle="pill" data-bs-target="#pills-month" type="button" role="tab" aria-controls="pills-month" aria-selected="false">Month</button>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link chart-nav" id="pills-month-tab" data-bs-toggle="pill" data-bs-target="#pills-month" type="button" role="tab" aria-controls="pills-month" aria-selected="false">Month</a>
                                                     </li>
-                                                    <li class="nav-item" role="presentation">
-                                                      <button class="nav-link" id="pills-year-tab" data-bs-toggle="pill" data-bs-target="#pills-year" type="button" role="tab" aria-controls="pills-year" aria-selected="false">Year</button>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link chart-nav" id="pills-year-tab" data-bs-toggle="pill" data-bs-target="#pills-year" type="button" role="tab" aria-controls="pills-year" aria-selected="false">Year</a>
                                                     </li>
                                                 </ul>
                                                 <div class="tab-content" id="pills-tabContent">
@@ -291,7 +293,7 @@
                                                     <div class="tab-pane fade" id="pills-year" role="tabpanel" aria-labelledby="pills-year-tab" tabindex="0">Year</div>
                                                 </div>
                                             </div>
-                                            <!--NAV TABS-->
+                                            <!--NAV TABS END-->
                                         </div>
                                     </div>
                                 </div>

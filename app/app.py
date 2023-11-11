@@ -41,14 +41,27 @@ def logout():
     session.pop('pass', None)
     return redirect(url_for('index'))
 
-#DASHBOARD P1 -----------------------------------------------------
+#SISTEMA -----------------------------------------------------
 @app.route('/')
 def index():
     if 'usuario' in session:
-        return render_template("home_copy.html")
+        return render_template("inicio.html")
     
     return redirect(url_for('login'))
 
+@app.route('/dashboard')
+def dashboard():
+    if 'usuario' in session:
+        return render_template("dashboard.html")
+    
+    return redirect(url_for('login'))
+
+@app.route('/herramientas')
+def tools():
+    if 'usuario' in session:
+        return render_template("herramientas.html")
+    
+    return redirect(url_for('login'))
 
 if __name__ == "__main__":
     app.run(debug=True)
