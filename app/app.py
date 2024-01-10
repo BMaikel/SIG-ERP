@@ -56,12 +56,12 @@ def dashboard():
     
     return redirect(url_for('login'))
 
-@app.route('/herramientas')
-def tools():
-    if 'usuario' in session:
-        return render_template("herramientas.html")
+# @app.route('/herramientas')
+# def tools():
+#     if 'usuario' in session:
+#         return render_template("herramientas.html")
     
-    return redirect(url_for('login'))
+#     return redirect(url_for('login'))
 
 if __name__ == "__main__":
     app.run(debug=True)
