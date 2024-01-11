@@ -56,6 +56,19 @@ def dashboard():
     
     return redirect(url_for('login'))
 
+@app.route('/productos')
+def productos():
+    if 'usuario' in session:
+        return render_template("productos.html")
+    
+    return redirect(url_for('login'))
+
+@app.route('/ventas')
+def ventas():
+    if 'usuario' in session:
+        return render_template("ventas.html")
+    
+    return redirect(url_for('login'))
 # @app.route('/herramientas')
 # def tools():
 #     if 'usuario' in session:
